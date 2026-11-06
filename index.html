@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Personal Expense Tracker</h1>
+
+    <div class="summary">
+      <div class="card">
+        <h3>Income</h3>
+        <p id="total-income">KES 0</p>
+      </div>
+      <div class="card">
+        <h3>Expenses</h3>
+        <p id="total-expenses">KES 0</p>
+      </div>
+      <div class="card">
+        <h3>Balance</h3>
+        <p id="balance">KES 0</p>
+      </div>
+    </div>
+
+    <div class="form">
+      <input type="text" id="description" placeholder="Description (e.g. Salary, Lunch)">
+      <input type="number" id="amount" placeholder="Amount">
+      <select id="type">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+      <button id="add-btn">Add Transaction</button>
+    </div>
+
+    <h2>Transaction History</h2>
+    <ul id="transaction-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
